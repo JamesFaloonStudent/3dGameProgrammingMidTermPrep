@@ -1,9 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class SceneController : MonoBehaviour
 {
+
+
+
     public void LoadScene(string sceneName) 
     {
         SceneManager.LoadScene(sceneName);
@@ -12,7 +16,7 @@ public class SceneController : MonoBehaviour
 
     public void QuitGame()
     {
-        SceneManager.QuitGame();
+        Application.Quit();
     }
 
 
